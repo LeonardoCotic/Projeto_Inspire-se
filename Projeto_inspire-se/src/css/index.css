@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2vh;
+    background-color: black;
+}
+.logo{
+    grid-area: logo;
+    font-size: 25px;
+    margin-left: 5vh;
+}
+span{
+    color: red;
+}
+header{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 9vh;
+    justify-content: center;
+    padding-top: 5vh;
+    column-gap: 3vh;
+    background-color: black;
+    grid-template-areas: 
+    'logo botao1 pesquisa botao2 botao3';
+}
+
+.botao{
+  
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    padding: 1vh;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color:white;
+    box-shadow: 2px 2px 2px  red;
+}
+.botao:hover{
+    background-color: red;
+}
+.botao1{
+    grid-area: botao1;
+    margin-left: 2vh;
+}
+.botao2{
+    grid-area: botao2;
+    margin-left: 5vh;
+}
+.botao3{
+    grid-area: botao3;
+}
+input{
+    grid-area: pesquisa;
+    height: 20px;
+    width: 900px;
+    border-radius: 30px;
+    padding: 1vh;
+    box-shadow: 2px 2px 2px  red;
+}
+h2{
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 5vh;
+}
+.conteudo1{
+    background-image: url(../img/img-conteudo/pngtree-sepia.jpg);
+    background-size: cover;
+}
+.conteudo2{
+    background-image: url(../img/img-conteudo/pb.jpg);
+    background-size: cover;
+}
+.conteudo{
+    
+    display: grid;
+    grid-template-columns: 50vh 50vh 50vh;
+    grid-template-rows: 40vh 40vh;
+    justify-content: center;
+    column-gap: 2vh;
+    row-gap: 2vh;
+    padding: 2vh;
+    
+    
+}
+.box{
+    box-shadow: 5px 5px 5px white;
+    border-radius: 30px;
+    align-content: end;
+    text-align: center;
+    
+    
+}
+h3, h4{
+    font-size: 30px;
+    color: white;
+    
+}
+.box1{
+    background-image: url(../img/img-index/img1.webp);
+    background-size: cover;
+    
+    
+}
+.box2{
+    background-image: url(../img/img-index/img2.jpg);
+    background-size: cover;
+   
+    
+}
+.box3{
+    background-image: url(../img/img-index/img3.jpg);
+    background-size: cover;
+   
+}
+.box4{
+    background-image: url(../img/img-index/img4.jfif);
+    background-size: cover;
+    
+}
+.box5{
+    background-image: url(../img/img-index/img5.webp);
+    background-size: cover;
+    
+}
+.box6{
+    background-image: url(../img/img-index/img6.jpg);
+    background-size: cover;
+    
+}
+.box7{
+    background-image: url(../img/img-index/img7.webp);
+    background-size: cover;
+   
+}
+.box8{
+    background-image: url(../img/img-index/img8.jfif);
+    background-size: cover;
+}
+.box9{
+    background-image: url(../img/img-index/img9.jpeg);
+    background-size: cover;
+}
+.box10{
+    background-image: url(../img/img-index/img10.png);
+    background-size: cover;
+}
+.box11{
+    background-image: url(../img/img-index/img11.jpg);
+    background-size: cover;
+}
+.box12{
+    background-image: url(../img/img-index/img12.jpg);
+    background-size: cover;
+}
+.box:hover{
+    
+    scale: 1.05;
+}
+img{
+    border-radius: 30px;
+}
+.logo1{
+    text-align: center;
+}
+a{
+        text-decoration: none;
+        color: black;
+}
+
+@media (max-width:1800px){
+    input{
+        width: 70VH;
+    }
+}
+@media (max-width:1600px){
+    input{
+        width: 60VH;
+    }
+    .conteudo{
+        display: grid;
+        grid-template-columns: 40vh 40vh 40vh;
+        grid-template-rows: 30vh 30vh;
+        justify-content: center;
+    }
+    h3, h4{
+        font-size: 25px;
+    }
+}
+@media (max-width:1500px){
+    input{
+        width: 50VH;
+    }
+}
+@media (max-width:1400px){
+    .botao1{
+        display: none;
+    }
+    .botao2{
+        margin-left: -10vh;
+    }
+    .botao3{
+        margin-left: -5vh;
+    }
+
+}
+@media (max-width:1210px){
+   input{
+    display: none;
+   }
+   .botao2{
+    margin-left: -5vh;
+   }
+   .conteudo{
+    display: grid;
+    grid-template-columns: 40vh 40vh ;
+    grid-template-rows: 30vh 30vh 30vh;
+    
+}
+   
+}
+@media (max-width:900px){
+    
+    .botao2{
+     margin-left: -10vh;
+    }
+    
+ }
+ @media (max-width:850px){
+    .conteudo{
+        display: grid;
+        grid-template-columns: 40vh ;
+        grid-template-rows: repeat(6, 30vh);
+        
+    }
+ }
+
+ @media (max-width:700px){
+    header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 9vh 7vh;
+        text-align: center;
+        grid-template-areas: 
+        'logo logo' 
+        'botao2 botao3';
+    }
+    .botao2{
+        margin-left: 15vh;
+       }
+       .botao3{
+        margin-left: 5vh;
+       }
+}
+@media (max-width:600px){
+    .botao2{
+        margin-left: 10vh;
+       }
+       .botao3{
+        margin-left: 5vh;
+       }
+}
+@media (max-width:600px){
+    .botao2{
+        margin-left: 10vh;
+       }
+       .botao3{
+        margin-left: 5vh;
+       }
+}
+@media (max-width:450px){
+    .botao2{
+        margin-left: 5vh;
+       }
+       .botao3{
+        margin-left: 2vh;
+       }
+       .logo{
+        margin-left: 1vh;
+       }
+}
+@media (max-width:320px){
+    .botao2{
+        margin-left: 2vh;
+       }
+       .botao3{
+        margin-left: 1vh;
+       }
+
+}
+
+
+
+    
+   
+

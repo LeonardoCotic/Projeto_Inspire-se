@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+@keyframes cadastro1{
+    from{
+        margin-left: -100vh;
+        }
+   }
+
+@keyframes cadastro2{
+    from{
+    margin-left:550vh ;
+    
+    }
+
+}
+.cadastro1{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px red;
+    height: auto;
+    width: 45vh;
+    margin-right: 1vh;
+    margin-top: 10vh;
+    animation-name: cadastro1;
+    animation-duration: 3s;
+    
+}
+
+.cadastro2{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px red;
+    margin: 1px;
+    height: auto;
+    width: 45vh;
+    margin-left: 1vh;
+    margin-top: 10vh;
+    animation-name: cadastro2;
+    animation-duration: 4s;
+}
+
+
+@keyframes animacao-logo{
+    from{
+        color: transparent;
+    }
+}
+
+#logo{
+    padding-top: 2vh;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    animation-name: animacao-logo;
+    animation-duration: 15s;
+    
+    
+}
+span{
+    color: red;
+    animation-name: animacao-logo;
+    animation-duration: 8s;
+    
+}
+h1{
+    text-align: center;
+}
+
+h4, input, select{
+    margin-left: 6vh;
+}
+input{
+    width: 30vh;
+    height: 3.5vh;
+    border-radius: 10px;
+    padding-left: 2vh;
+}
+#botao input{
+    width: 10vh;
+    margin-left: 25vh;
+    background-color: red;
+    color: white;
+}
+#sexo input{
+    width: 1vh;
+}
+hr{
+    width: 30vh;
+    margin-left: 8vh;
+}
+
+@media(max-width:920px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    
+}
+@media (min-width:0px) and (max-width:460px){
+    .box{
+        width: auto;
+        
+        
+    }
+    hr{
+        margin-left: 2vh;
+
+    }
+    h1{
+        padding: 1vh;
+    }
+    
+    h4, input, select{
+        margin-left: 1vh;
+    }
+    #botao{
+        margin-left: -2vh;
+    }
+    
+    
+}

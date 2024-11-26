@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+@keyframes animacao-body{
+    from{
+        
+        padding-top: 150vh;
+        
+    }
+    to{
+        padding-top: 10vh;
+        
+
+    }
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    background-color: black;
+    animation-name: animacao-body;
+    animation-duration: 4s;
+   
+}
+
+@keyframes animacao-box{
+    from{
+        
+        background-color: transparent;
+        color: transparent;
+        
+    }
+    to{
+        background-color: white;
+        
+
+    }
+}
+
+#box-login{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 50vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 4px red;
+    animation-name: animacao-box;
+    animation-duration: 5s;
+    
+}
+
+@keyframes animacao-span{
+    from{
+        color: transparent;
+    }
+    to{
+        color: red;
+    }
+}
+@keyframes animacao-logo{
+    from{
+        color: transparent;
+    }
+    to{
+        color: black;
+    }
+}
+#logo{
+    padding-top: 2vh;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    animation-name: animacao-logo;
+    animation-duration: 10s;
+    
+}
+span{
+    color: red;
+    animation-name: animacao-span;
+    animation-duration: 10s;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(136, 136, 136);
+}
+.email-senha{
+    font-size: 13px;
+    margin-left: 6vh;
+    
+}
+h4{
+    margin-left: 6vh;
+}
+.email-senha input{
+    width: 35vh;
+    height: 4vh;
+    border-radius: 10px;
+    padding-left: 2vh;
+}
+.botao #entrar:hover{
+    scale: 1.06;
+}
+.botao #facebook:hover{
+    scale: 1.06;
+}
+.botao #gmail:hover{
+    scale: 1.06;
+}
+
+@keyframes animacao-entrar{
+    from{
+    background-color: transparent;
+    }
+    to{
+        background-color: red;
+    }
+}
+@keyframes animacao-facebook{
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: rgb(155, 155, 233);
+    }
+}
+@keyframes animacao-gmail{
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: rgb(181, 181, 181);
+    }
+}
+.botao #entrar{
+    width: 25vh;
+    height: 4vh;
+    margin-left: 12vh;
+    margin-bottom: 1vh;
+    border-radius: 30px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    animation-name: animacao-entrar;
+    animation-duration: 10s;
+}
+.botao #facebook{
+    width: 25vh;
+    height: 4vh;
+    margin-left: 12vh;
+    margin-bottom: 1vh;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(155, 155, 233);
+    color: white;
+    font-size: 17px;
+    animation-name: animacao-facebook;
+    animation-duration: 10s;
+}
+.botao #gmail{
+    width: 25vh;
+    height: 4vh;
+    margin-left: 12vh;
+    margin-bottom: 1vh;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(181, 181, 181);
+    color: white;
+    font-size: 17px;
+    animation-name: animacao-gmail;
+    animation-duration: 10s;
+}
+h5{
+    text-align: center;
+    color: rgb(136, 136, 136);
+}
+hr{
+    width: 40vh;
+    margin-left:5vh;
+
+}
+@media screen and (max-width:500px){
+    #box-login{
+        width: 40vh;
+    }
+    .email-senha input{
+        width: 25vh;
+    }
+    hr{
+        width: 30vh;
+    }
+    .botao #entrar{
+        margin-left: 7vh;
+    }
+    .botao #facebook{
+        margin-left: 7vh;
+    }
+    .botao #gmail{
+        margin-left: 7vh;
+    }
+
+}
+@media screen and (max-width:375px){
+    #box-login{
+        width: 35vh;
+    }
+    .email-senha input{
+        width: 20vh;
+    }
+    hr{
+        width: 25vh;
+    }
+    .botao #entrar{
+        margin-left: 5vh;
+    }
+    .botao #facebook{
+        margin-left: 5vh;
+    }
+    .botao #gmail{
+        margin-left: 5vh;
+    }
+
+}

@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 30vh 1fr;
+    grid-template-rows: 15vh auto 15vh;
+    row-gap: 2vh;
+    column-gap: 2vh;
+    grid-template-areas: 
+    'header header''aside main' 'footer footer';
+}
+.logo{
+    grid-area: logo;
+    font-size: 25px;
+    margin-left: 5vh;
+    color: white;
+}
+.logo1{
+    text-align: center;
+}
+span{
+    color: red;
+}
+header{
+    background-color: black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh;
+    align-items: center;
+    column-gap: 3vh;
+    grid-template-areas: 
+    'logo botao1 pesquisa botao2 botao3';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.botao{
+    
+    width: 10vh;
+    height: 2vh;
+    text-align: center;
+    padding: 1vh;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color:white;
+    box-shadow: 2px 2px 2px  red;
+}
+.botao:hover{
+    background-color: red;
+    scale: 1.09;
+}
+.botao1{
+    grid-area: botao1;
+    margin-left: 2vh;
+}
+.botao2{
+    grid-area: botao2;
+    margin-left: 5vh;
+}
+.botao3{
+    grid-area: botao3;
+}
+input{
+    grid-area: pesquisa;
+    height: 2vh;
+    width: 90vh;
+    border-radius: 30px;
+    padding: 1vh;
+    box-shadow: 2px 2px 2px  red;
+}
+
+main{
+
+    grid-area: main;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 30vh);
+    grid-template-rows: repeat(6, 45vh);
+    row-gap: 2vh;
+    column-gap: 1vh;
+    justify-content: center;
+    background-image: url(../img/img-conteudo/fundo-pag1.jpg);
+
+}
+.box{
+    background-color: black;
+    
+}
+.box:hover{
+    scale: 1.08;
+    opacity: 0.8;
+}
+aside{
+    background-color: black;
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 20vh;
+    grid-template-rows: repeat(12, 22vh);
+    row-gap: 2vh;
+    justify-content: center;
+    
+}
+
+.aside1:hover{
+    scale: 1.06;
+    opacity: 0.5;
+}
+h5{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+footer{
+    background-color: black;
+     grid-area: footer;
+    padding-top: 4vh;
+}
+
+
+
+
+@media screen and (max-width:1790px){
+
+    .botao1{
+        display: none;
+        
+    }
+    .botao2{
+        margin-left: 3vh;
+    }
+    .botao3{
+        margin-left: -20vh;
+    }
+
+    header{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        'logo pesquisa botao2 botao3';
+
+    }
+    input{
+        width: 55vh;
+        margin-left: -5vh;
+        
+    }
+    
+
+    main{
+        width: auto;
+        grid-template-columns: repeat(4, 30vh);
+        grid-template-rows: repeat(8, 45vh);
+        justify-content: center;
+        padding-left: 2vh;
+    }
+    .box29{
+        grid-column: 1/3;
+    }
+    .box30{
+        grid-column: 3/5;
+    }
+}
+
+@media screen and (max-width:1600px){
+    input{
+        width: 50vh;
+        margin-left: 5vh;
+        
+    }
+    .botao3{
+        margin-left: -10vh;
+
+    }
+    .botao2{
+        margin-left: 5vh;
+    }
+}
+
+@media screen and (max-width:1500px){
+    main{
+        grid-template-columns: repeat(3, 30vh);
+        grid-template-rows: repeat(10, 45vh);
+        justify-content: center;
+        padding-left: 2vh;
+    }
+    .box30{
+        grid-column: 3/4;
+    }
+    .box29{
+        grid-column:2/3 ;
+    }
+    input{
+        width: 35vh;
+        margin-left: -1vh;
+    }
+    .botao2{
+        margin-left: 2vh;
+    }
+    .botao3{
+        margin-left: -20vh;
+    }
+}
+
+@media screen and (max-width:1350px){
+    header{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 10vh;
+        grid-template-areas: 
+        'logo logo logo' 'pesquisa botao2 botao3';
+    }
+    input{
+        margin-bottom: 5vh;
+        margin-left: 5vh;
+    }
+    .botao2{
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+    }
+    .botao3{
+        margin-bottom: 5vh;
+        margin-left: -15vh;
+    }
+   
+    
+}
+
+@media screen and (max-width:1215px){
+    main{
+        grid-template-columns: repeat(2, 30vh);
+        grid-template-rows: repeat(15, 45vh);
+        justify-content: center;
+        padding-left: 2vh;
+        
+    }
+    .box29{
+        grid-column:1/2 ;
+    }
+    .box30{
+        grid-column: 2/3;
+    }
+}
+
+@media screen and (max-width:1030px){
+   input{
+    
+    width: 35vh;
+   } 
+  
+    .botao2{
+        margin-left: 2vh;
+    }
+
+    .botao3{
+        margin-left: -10vh;
+    }
+
+}
+@media screen and (max-width:930px){
+   input{
+    display: none;
+   }
+
+   main{
+    grid-template-columns: 35vh ;
+    grid-template-rows: repeat(30, 45vh);
+    
+   }
+   .box29{
+    grid-column: 1/2;
+   }
+   .box30{
+    grid-column: 1/2;
+   }
+    
+}
+
+@media screen and (max-width:725px){
+    main{
+        grid-template-columns: 30vh ;
+        grid-template-rows: repeat(30, 45vh);
+        
+       }
+
+    .botao2{
+        margin-left: -10vh;
+    }
+   
+}
+@media screen and (max-width:635px){
+   
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh auto 10vh;
+        grid-template-areas: 
+        'header' 'main' 'footer'
+        ;
+    }
+    
+    main{
+        grid-template-columns: 40vh;
+        grid-template-rows: repeat(30, 45vh);
+        justify-content: center;
+    }
+    aside{
+        display: none;
+    }
+    
+   
+}
+
+@media screen and (max-width:500px){
+    main{
+        grid-template-columns: 35vh;
+        grid-template-rows: repeat(30, 45vh);
+        justify-content: center;
+    }
+}
